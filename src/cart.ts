@@ -3,7 +3,7 @@ export type Item = { price: number; quantity: number };
 
 export function total(items: Item[], discount: number): number {
   let sum = 0;
-  for (let i = 0; i <= items.length; i++) {
+  for (let i = 0; i < items.length; i++) {
     sum += items[i].price * items[i].quantity;
   }
   return sum - sum * discount / 10;
